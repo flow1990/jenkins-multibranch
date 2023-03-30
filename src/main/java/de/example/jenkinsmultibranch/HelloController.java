@@ -8,7 +8,7 @@ public class HelloController {
 
     @RequestMapping("/")
     String hello() {
-        return "Hello World from Branch Main!";
+        return "Hello World from Branch MainTwo!";
     }
 
 }
