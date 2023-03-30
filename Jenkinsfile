@@ -4,7 +4,12 @@ pipeline {
        maven 'MVN_3.8.6'
     }
     stages {
-
+        stage('Which Java?') {
+            steps {
+                sh 'java --version'
+            }
+        }
+        
         stage('Maven install'){
             steps{
                 script{
