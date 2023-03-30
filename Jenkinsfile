@@ -30,7 +30,7 @@ pipeline {
         stage('Curl'){
             steps{
                 script{
-                    sh "curl localhost:8081"
+                    sh "curl localhost:8082"
                 }
             }
         }
