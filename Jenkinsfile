@@ -2,6 +2,7 @@ pipeline {
     agent any
     tools {
        maven 'MVN_3.8.6'
+       jdk 'Java17'
     }
     stages {
         stage('Which Java?') {
@@ -9,7 +10,7 @@ pipeline {
                 sh 'java --version'
             }
         }
-        
+
         stage('Maven install'){
             steps{
                 script{
